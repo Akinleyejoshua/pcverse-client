@@ -4,7 +4,7 @@ import { get } from "./helpers";
 
 const settings = {
 
-	baseURL: 'http://pc-verse/api/',
+	baseURL: 'https://pc-verse.herokuapp.com/api/',
 	// baseURL: 'http://localhost:1000/api/',
 	headers: {
 		Accept: 'application/json,text/plain,*/*',

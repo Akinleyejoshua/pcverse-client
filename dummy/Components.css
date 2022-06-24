@@ -1,0 +1,461 @@
+.icon {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-navbar {
+    position: fixed;
+    width: 12rem;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    background: rgb(39, 51, 89, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    z-index: 1000;
+    transition: .5s ease-in-out;
+    transform: translateX(200rem);
+    text-transform: uppercase;
+}
+
+.auth-navbar.show {
+    transform: translateX(0rem);
+    /* display: none; */
+}
+
+nav .nav-links {
+    text-transform: uppercase;
+    display: none;
+}
+
+a,
+button {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    /* overflow: hidden; */
+}
+
+.btn {
+    overflow: hidden;
+    position: relative;
+}
+
+a::after,
+button::after,
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+* {
+    align-self: center;
+
+}
+
+a .icon,
+button .icon {
+    margin-right: .5rem;
+}
+
+.input-bar {
+    display: flex;
+    border: 1px solid whitesmoke;
+    padding: .5rem .8rem;
+    border-radius: .25rem;
+    opacity: .6;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.input-bar input {
+    background-color: transparent;
+    margin-left: .5rem;
+}
+
+.input-bar select {
+    background-color: transparent;
+    margin-left: .5rem;
+    width: 100%;
+}
+
+option {
+    background-color: none;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+.form {
+    margin: auto;
+}
+
+.form button {
+    margin: auto;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    border-radius: .25rem;
+}
+
+.user-header h3 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.user-header .right {
+    padding: .5rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    width: 7rem;
+}
+
+.user-header .right .icon {
+    font-size: 20px;
+    margin: 0;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    /* height: 5rem; */
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.label-btn {
+    text-align: center;
+    width: 100%;
+}
+
+.label-btn .icon {
+    margin: auto;
+}
+
+.label-btn p {
+    font-size: 12px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.metrics .item {
+    padding: 2rem;
+    border: 1px solid rgba(245, 245, 245, 0.05);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.metrics .item .icon {
+    font-size: 60px;
+    align-self: flex-start;
+}
+
+.metrics .item h1 {
+    font-size: 3rem;
+    opacity: .7;
+}
+
+.item p {
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.metrics button {
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    /* width: 100%;     */
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: .5rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: auto;
+}
+
+.grid {
+    grid-gap: 1rem;
+}
+
+.width-none {
+    width: 0%;
+    /* transition: .2s; */
+    overflow: hidden;
+}
+
+.width-full {
+    width: 100%;
+    transition: .2s;
+}
+
+.devices .item {
+    padding: .6rem;
+    border: 1px solid rgba(245, 245, 245, 0.05);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.devices .item .icon {
+    margin: 0;
+}
+
+.devices .item p {
+    font-size: 10px;
+}
+
+.devices button {
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.getstarted-btn {
+    padding: 1rem;
+    background: linear-gradient(to right, rgba(226, 52, 52, 0.474), rgba(29, 53, 124, 0.411));
+    border-radius: .2rem;
+}
+
+.user-navbar {
+    position: fixed;
+    width: 15rem;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    background: rgb(39, 51, 89, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    z-index: 1000;
+    transition: .5s ease-in-out;
+    transform: translateX(200rem);
+    text-transform: uppercase;
+}
+
+.user-navbar.show {
+    transform: translateX(0rem);
+    /* display: none; */
+}
+
+.user-navbar .top {
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-navbar .links,
+.user-navbar .actions {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: center;
+
+}
+
+.user-navbar .links button,
+.user-navbar .actions button {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: .5rem 1rem;
+    /* text-align: center; */
+    display: flex;
+}
+
+.add-device main .actions button {
+    /* background-color: red; */
+    padding: .5rem 1rem;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: .2rem;
+}
+
+.getstarted-page main .icon {
+    margin-right: .5rem;
+}
+
+.getstarted-page main p {
+    opacity: .6;
+    font-size: 14px;
+}
+
+/* main button:hover{
+    background: linear-gradient(to right, rgba(226, 52, 52, 0.474), rgba(29, 53, 124, 0.411));
+
+} */
+
+.services .item {
+    padding: .5rem;
+    /* border: 1px solid rgba(245, 245, 245, 0.05); */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    border-radius: .2rem;
+}
+
+.services .item .icon {
+    padding: .25rem .5rem;
+    font-size: 100px;
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+.services .item p {
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.help h1{
+    font-size: 25px;
+}
+
+.accordion{
+    width: 100%;
+    /* background-color: red; */
+}
+
+.accordion button{
+    width: 100%;
+}
+
+.accordion .panel{
+    /* height: 0; */
+    overflow: hidden;
+    font-size: 12px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.accordion .actions{
+    width: 100%;
+    color: white;
+}
+
+.accordion .actions button{
+    border-radius: none;
+}
+
+.panel button{
+    width: max-content;
+    background: linear-gradient(to right, rgba(226, 52, 52, 0.474), rgba(29, 53, 124, 0.411));
+}
+
+.panel button p{
+    margin-left: .5rem;
+    display: none;
+}
+
+.panel ol{
+    padding: 0 .5rem;
+}
+
+@media screen and (min-width: 640px) {
+    nav .nav-links {
+        display: initial;
+    }
+
+    .panel button p{
+        margin-left: .5rem;
+        display: flex;
+    }
+
+    .sidebar {
+        display: initial;
+        width: 20rem;
+        height: 100%;
+        /* background: rgb(37, 45, 72); */
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 30px rgba(44, 44, 44, 0.5);
+        /* box-shadow: 0 0px 100px rgba(0, 0, 0, 0.5); */
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        /* border-right: 1px solid rgba(255, 255, 255, 0.1); */
+        z-index: 1000;
+        transition: .5s ease-in-out;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .sidebar .top,
+    .user-navbar .top {
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .sidebar .user-icon {
+        padding: .5rem;
+        border: 1px solid whitesmoke;
+        border-radius: 50%;
+        opacity: .8;
+    }
+
+    .sidebar .top p {
+        font-size: 12px;
+        margin: 1rem 0;
+    }
+
+    .sidebar .links,
+    .sidebar .actions {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .links button,
+    .actions button {
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: .5rem 1rem;
+    }
+
+    .sidebar button:hover,
+    .item button:hover {
+        background: linear-gradient(to right, rgba(226, 52, 52, 0.474), rgba(29, 53, 124, 0.411));
+        /* background: rgba(191, 30, 30, 0.548); */
+    }
+
+    .sidebar .icon {
+        font-size: 30px;
+        margin-right: 1rem;
+        padding: .3rem;
+        border: 1px solid rgba(245, 245, 245, 0.1);
+        border-radius: .5rem;
+    }
+
+    .bottom-nav,
+    .user-profile {
+        display: none;
+    }
+
+}

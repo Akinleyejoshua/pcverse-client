@@ -7,7 +7,7 @@ const settings = {
 	baseURL: 'https://pc-verse.herokuapp.com/api/',
 	// baseURL: 'http://localhost:1000/api/',
 	headers: {
-		Accept: 'application/json,text/plain,*/*',
+		'Accept': 'application/json,text/plain,*/*',
 		'Content-Type': 'application/json',
 		'Access-Control-Allow-Origin': "*"
 

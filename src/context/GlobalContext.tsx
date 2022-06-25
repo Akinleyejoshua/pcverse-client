@@ -278,7 +278,6 @@ export const GlobalProvider = ({ children }: GlobalContextProviderProps) => {
 
                     if (res.data.message === "token expired") return clearAuth();
                     if (res.data.error === "does-not-exist") return clearAuth();
-//                 console.log(res)
 
                     setUser((prevState) => ({
                         ...prevState,

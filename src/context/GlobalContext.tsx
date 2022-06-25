@@ -272,11 +272,11 @@ export const GlobalProvider = ({ children }: GlobalContextProviderProps) => {
         handleUser(true, "loading");
         decodeToken(`${token}`).then((data: any) => {
             handleUser(data.user_id, "id");
-            console.log(data);
+//             console.log(data);
             getUserData(data.user_id)
                 .then((res) => {
                     var data = res.data.data;
-
+                    console.log(res)
                     if (res.data.message === "token expired") return clearAuth();
                     if (res.data.error === "does-not-exist") return clearAuth();
 

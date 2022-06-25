@@ -272,6 +272,7 @@ export const GlobalProvider = ({ children }: GlobalContextProviderProps) => {
         handleUser(true, "loading");
         decodeToken(`${token}`).then((data: any) => {
             handleUser(data.user_id, "id");
+            console.log(data);
             getUserData(data.user_id)
                 .then((res) => {
                     var data = res.data.data;

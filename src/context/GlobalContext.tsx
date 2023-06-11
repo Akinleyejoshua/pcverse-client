@@ -389,9 +389,9 @@ export const GlobalProvider = ({ children }: GlobalContextProviderProps) => {
         updateTransactionsData();
     };
 
-    useEffect(() => {
-        route.auth && clientAuth(`${token}`);
-    }, [route.auth]);
+//     useEffect(() => {
+//         route.auth && clientAuth(`${token}`);
+//     }, [route.auth]);
 
     useEffect(() => {
         updateTransactionsData();

@@ -74,7 +74,7 @@ export const GetToken: React.VFC = () => {
         onSuccess: (res: any) => {
 
             // console.log(res);
-            // handleTransactionFromPayStack(res);
+            handleTransactionFromPayStack(res);
 
             setShowBuyNow(false);
         },

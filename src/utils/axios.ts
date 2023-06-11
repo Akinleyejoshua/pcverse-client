@@ -4,7 +4,7 @@ import { get } from "./helpers";
 
 const settings = {
 
-	baseURL: 'https://pc-verse.herokuapp.com/api/',
+	baseURL: 'https://uni-pc-api-production.up.railway.app/api/',
 	headers: {
 		'Accept': 'application/json,text/plain,*/*',
 		'Content-Type': 'application/json',

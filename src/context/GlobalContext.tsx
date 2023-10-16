@@ -271,11 +271,11 @@ export const GlobalProvider = ({ children }: GlobalContextProviderProps) => {
 
         handleUser(true, "loading");
         decodeToken(`${token}`).then((data: any) => {
-            handleUser(data.user_id, "id");
+            handleUser(data?.user_id, "id");
 //             console.log(data);
-            getUserData(data.user_id)
+            getUserData(data?.user_id)
                 .then((res) => {
-                    var data = res.data.data;
+                    var data = res.data?.data;
 //                     console.log(res)
 //                     if (res.data.message === "token expired") return clearAuth();
 //                     if (res.data.error === "does-not-exist") return clearAuth();
@@ -287,7 +287,7 @@ export const GlobalProvider = ({ children }: GlobalContextProviderProps) => {
                         mcoin: data?.mcoin,
                         devices: data?.devices,
                         email: data?.email,
-                        notifications: res.data.notifications
+                        notifications: res.data?.notifications
                     }));
                 })
                 .then(() => {

@@ -287,7 +287,7 @@ export const GlobalProvider = ({ children }: GlobalContextProviderProps) => {
                         mcoin: data?.mcoin,
                         devices: data?.devices,
                         email: data?.email,
-                        notifications: res.data?.notifications
+                        // notifications: res.data?.notifications
                     }));
                 })
                 .then(() => {

@@ -4,7 +4,7 @@ import { get } from "./helpers";
 
 const settings = {
 
-	baseURL: 'https://uni-pc-api-production.up.railway.app/api/',
+	baseURL: 'https://pc-verse.vercel.app/api/',
 	headers: {
 		'Accept': 'application/json,text/plain,*/*',
 		'Content-Type': 'application/json',
